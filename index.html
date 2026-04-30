@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms of Service | NEXTGEN PROGRAMMER'S</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #121212; color: #e0e0e0; max-width: 850px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #4CAF50; }
+        h1 { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 30px;}
+        .section { background: #1e1e1e; padding: 25px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        a { color: #4CAF50; text-decoration: none; font-weight: bold;}
+        a:hover { text-decoration: underline; }
+        ul { margin-top: 5px; }
+        li { margin-bottom: 10px; }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #888; border-top: 1px solid #333; padding-top: 20px;}
+        .highlight { color: #fff; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Privacy Policy & Terms of Service</h1>
+    <p style="text-align: center; color: #aaa;">Last Updated: <strong id="current-date">2026-04-30</strong></p>
+    <p style="text-align: center; font-size: 1.1em;">Official legal documentation for applications and games published by <span class="highlight">NEXTGEN PROGRAMMER'S</span> on the Google Play Store.</p>
+
+    <div class="section">
+        <h2>Part 1: Privacy Policy</h2>
+        <p>Your privacy is our priority. This policy outlines how <span class="highlight">NEXTGEN PROGRAMMER'S</span> collects, uses, and protects your data within our applications.</p>
+
+        <h3>1. Data We Collect</h3>
+        <p>In compliance with Google Play's Data Safety requirements, we disclose that our apps may collect the following data types:</p>
+        <ul>
+            <li><strong>Account Information:</strong> If you choose to create an account to save your progress, we collect your Email Address and securely store your authentication credentials via Firebase Authentication.</li>
+            <li><strong>In-App Activity & Game Progress:</strong> Your high scores, in-game currency, upgrades, and achievements are stored locally on your device and synced to our secure cloud database (Cloud Firestore) for leaderboard functionality and cross-device saving.</li>
+            <li><strong>Device & Usage Data:</strong> Advertising IDs, device models, OS versions, and crash logs are collected automatically to provide personalized ads and improve app stability.</li>
+        </ul>
+
+        <h3>2. Third-Party Services</h3>
+        <p>Our application utilizes industry-standard third-party services. Their data processing is governed by their respective privacy policies:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a> (Core functionality & Billing)</li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Authentication & Cloud Firestore</a> (Account management & Database)</li>
+            <li><a href="https://policies.google.com/technologies/ads" target="_blank">Google AdMob</a> (Monetization & Ad Personalization)</li>
+        </ul>
+
+        <h3>3. Children's Privacy (COPPA)</h3>
+        <p>Our applications are not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will immediately delete such data from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.</p>
+
+        <h3>4. Data Deletion Request</h3>
+        <p>Users have the right to request the complete deletion of their account and any associated data (including high scores and progress). To request data removal, please email us directly at: <a href="mailto:tmmtnwalajyal@gmail.com">tmmtnwalajyal@gmail.com</a> with the subject "Data Deletion Request". Requests are typically processed within 7-14 business days.</p>
+    </div>
+
+    <div class="section">
+        <h2>Part 2: Terms of Service</h2>
+        
+        <h3>1. Legal Ownership & Intellectual Property</h3>
+        <p>All source code, mechanics, graphics, audio assets, and the brand "NEXTGEN PROGRAMMER'S" are the sole intellectual property of the developer, <span class="highlight">Mohamed Elhlimi</span>. Any unauthorized reproduction, modification, reverse engineering, or distribution of this software is strictly prohibited and subject to international copyright laws.</p>
+
+        <h3>2. Disclaimer of Warranties ("AS IS" Clause)</h3>
+        <p>This software is provided "AS IS", without warranty of any kind, express or implied. <span class="highlight">NEXTGEN PROGRAMMER'S</span> does not guarantee that the application will be uninterrupted, error-free, or completely secure. We are not responsible for any loss of in-game progress, data corruption, or device issues.</p>
+
+        <h3>3. Limitation of Liability</h3>
+        <p>Under no circumstances shall the developer or NEXTGEN PROGRAMMER'S be held liable for any direct, indirect, incidental, or consequential damages resulting from your use or inability to use our applications.</p>
+
+        <h3>4. Modifications to Terms</h3>
+        <p>We reserve the right to modify this Privacy Policy and Terms of Service at any time without prior notice to ensure ongoing compliance with Google Play Developer Policies and international laws. Continued use of the application constitutes acceptance of any changes.</p>
+    </div>
+
+    <div class="footer">
+        <p>Developer Contact: <strong><a href="mailto:tmmtnwalajyal@gmail.com" style="color:#888;">tmmtnwalajyal@gmail.com</a></strong></p>
+        <p>&copy; <span id="year"></span> NEXTGEN PROGRAMMER'S | All Rights Reserved.</p>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        // تحديث التاريخ تلقائياً ليكون تاريخ اليوم في حالة التعديل
+        const today = new Date();
+        document.getElementById('current-date').textContent = today.toISOString().split('T')[0];
+    </script>
+
+</body>
+</html>
